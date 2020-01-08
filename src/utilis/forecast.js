@@ -11,7 +11,7 @@ const forecast = (latitude,longitude,callback)=>{
             callback('invalid location',undefined)
         }
         else{
-            callback(undefined, "it's"+' '+body.currently.temperature+' '+'degree out there.It is'+' '+body.currently.summary+' '+'throught the day with'+' '+body.currently.precipProbability+'%'+" "+'of rain')
+            callback(undefined, "it's"+' '+body.currently.temperature+' '+'degree out there'+' '+body.currently.summary+' '+'throught the day with'+' '+body.currently.precipProbability+'%'+" "+'of rain')
         }
     })
 }
